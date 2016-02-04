@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		29E844E11C63EF7D0020D7F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E844E01C63EF7D0020D7F3 /* AppDelegate.swift */; };
-		29E844E31C63EF7D0020D7F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E844E21C63EF7D0020D7F3 /* ViewController.swift */; };
 		29E844E61C63EF7D0020D7F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E844E41C63EF7D0020D7F3 /* Main.storyboard */; };
 		29E844E81C63EF7D0020D7F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E844E71C63EF7D0020D7F3 /* Assets.xcassets */; };
 		29E844EB1C63EF7D0020D7F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E844E91C63EF7D0020D7F3 /* LaunchScreen.storyboard */; };
 		29E844F61C63EF7D0020D7F3 /* ModelAndControllerMiniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E844F51C63EF7D0020D7F3 /* ModelAndControllerMiniTests.swift */; };
 		29E845011C63EF7D0020D7F3 /* ModelAndControllerMiniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E845001C63EF7D0020D7F3 /* ModelAndControllerMiniUITests.swift */; };
+		29E8450F1C63F0870020D7F3 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E8450E1C63F0870020D7F3 /* Student.swift */; };
+		29E845111C63F1970020D7F3 /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E845101C63F1970020D7F3 /* StudentController.swift */; };
+		29E845131C63F5D10020D7F3 /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E845121C63F5D10020D7F3 /* StudentTableViewController.swift */; };
+		29E845151C63F61A0020D7F3 /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E845141C63F61A0020D7F3 /* AddStudentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		29E844DD1C63EF7D0020D7F3 /* ModelAndControllerMini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelAndControllerMini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E844E01C63EF7D0020D7F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29E844E21C63EF7D0020D7F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		29E844E51C63EF7D0020D7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29E844E71C63EF7D0020D7F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29E844EA1C63EF7D0020D7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		29E844FC1C63EF7D0020D7F3 /* ModelAndControllerMiniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelAndControllerMiniUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E845001C63EF7D0020D7F3 /* ModelAndControllerMiniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAndControllerMiniUITests.swift; sourceTree = "<group>"; };
 		29E845021C63EF7D0020D7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29E8450E1C63F0870020D7F3 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		29E845101C63F1970020D7F3 /* StudentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentController.swift; sourceTree = "<group>"; };
+		29E845121C63F5D10020D7F3 /* StudentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
+		29E845141C63F61A0020D7F3 /* AddStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				29E844E01C63EF7D0020D7F3 /* AppDelegate.swift */,
-				29E844E21C63EF7D0020D7F3 /* ViewController.swift */,
+				29E845121C63F5D10020D7F3 /* StudentTableViewController.swift */,
+				29E845141C63F61A0020D7F3 /* AddStudentViewController.swift */,
+				29E8450E1C63F0870020D7F3 /* Student.swift */,
+				29E845101C63F1970020D7F3 /* StudentController.swift */,
 				29E844E41C63EF7D0020D7F3 /* Main.storyboard */,
 				29E844E71C63EF7D0020D7F3 /* Assets.xcassets */,
 				29E844E91C63EF7D0020D7F3 /* LaunchScreen.storyboard */,
@@ -256,7 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E844E31C63EF7D0020D7F3 /* ViewController.swift in Sources */,
+				29E845111C63F1970020D7F3 /* StudentController.swift in Sources */,
+				29E845151C63F61A0020D7F3 /* AddStudentViewController.swift in Sources */,
+				29E8450F1C63F0870020D7F3 /* Student.swift in Sources */,
+				29E845131C63F5D10020D7F3 /* StudentTableViewController.swift in Sources */,
 				29E844E11C63EF7D0020D7F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

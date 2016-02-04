@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "29E844DC1C63EF7D0020D7F3"
+               BuildableName = "ModelAndControllerMini.app"
+               BlueprintName = "ModelAndControllerMini"
+               ReferencedContainer = "container:ModelAndControllerMini.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "29E844F01C63EF7D0020D7F3"
+               BuildableName = "ModelAndControllerMiniTests.xctest"
+               BlueprintName = "ModelAndControllerMiniTests"
+               ReferencedContainer = "container:ModelAndControllerMini.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "29E844FB1C63EF7D0020D7F3"
+               BuildableName = "ModelAndControllerMiniUITests.xctest"
+               BlueprintName = "ModelAndControllerMiniUITests"
+               ReferencedContainer = "container:ModelAndControllerMini.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "29E844DC1C63EF7D0020D7F3"
+            BuildableName = "ModelAndControllerMini.app"
+            BlueprintName = "ModelAndControllerMini"
+            ReferencedContainer = "container:ModelAndControllerMini.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "29E844DC1C63EF7D0020D7F3"
+            BuildableName = "ModelAndControllerMini.app"
+            BlueprintName = "ModelAndControllerMini"
+            ReferencedContainer = "container:ModelAndControllerMini.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "29E844DC1C63EF7D0020D7F3"
+            BuildableName = "ModelAndControllerMini.app"
+            BlueprintName = "ModelAndControllerMini"
+            ReferencedContainer = "container:ModelAndControllerMini.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
