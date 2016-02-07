@@ -45,7 +45,7 @@ class StudentTableViewController: UITableViewController {
         
         let student = StudentController.sharedInstance.studentArray[indexPath.row]
 
-        cell.textLabel?.text = student.firstName! + " " + student.lastName! + " " + student.age!
+        cell.textLabel?.text = student.firstName + " " + student.lastName + " " + student.age
 
         return cell
     }
