@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Student {
+class Student : NSObject, NSCoding {
     
     private let firstNameKey = "firstNameKey"
     private let lastNameKey = "lastNameKey"
@@ -24,7 +24,32 @@ class Student {
         self.age = age
         
     }
+   @objc required init?(coder aDecoder: NSCoder) {
+        guard let firstName = aDecoder.decodeObjectForKey(firstNameKey) as? String else{
+            
+            self.firstName = ""
+            self.lastName = ""
+            self.age = ""
+            super.init()
+            return nil
+        }
     
+        self.firstName = firstName
+        self.lastName = aDecoder.decodeObjectForKey(lastNameKey) as! String
+        self.age = aDecoder.decodeObjectForKey(ageKey) as! String
+        super.init()
+    }
+    
+    @objc func encodeWithCoder(aCoder: NSCoder) {
+        
+        aCoder.encodeObject(self.firstName, forKey: firstNameKey)
+        aCoder.encodeObject(self.lastName, forKey: lastNameKey)
+        aCoder.encodeObject(self.age, forKey: ageKey)
+        
+    }
+    
+    
+    /*
     init?(dictionary : Dictionary<String, AnyObject>){
         guard let firstName = dictionary[firstNameKey] as? String,
             let lastName = dictionary[lastNameKey] as? String,
@@ -51,6 +76,6 @@ class Student {
 
         return dictionary
     }
-    
+    */
     
 }

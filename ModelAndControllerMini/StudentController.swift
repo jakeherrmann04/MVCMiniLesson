@@ -24,18 +24,17 @@ class StudentController {
     
     func loadFromPresistentStore(){
         
-        let studentDictionariesFromDefaults = NSUserDefaults.standardUserDefaults().objectForKey(studentsKey) as?[Dictionary
-        <String, AnyObject>]
-        
-        if let studentDictionary = studentDictionariesFromDefaults{
-            
-            self.studentArray = studentDictionary.map({Student(dictionary: $0)!})
+       let unarchivedStudents = NSKeyedUnarchiver.unarchiveObjectWithFile(self.filePath(studentsKey))
+    
+        if let students = unarchivedStudents as? [Student]{
+            self.studentArray = students
         }
     }
     
     func saveToPersistentStorage(){
-        let studentDictionaries = self.studentArray.map({$0.dictionaryCopy()})
-        NSUserDefaults.standardUserDefaults().setObject(studentDictionaries, forKey: studentsKey)
+       
+        NSKeyedArchiver.archiveRootObject(self.studentArray, toFile: self.filePath(studentsKey))
+        
     }
     
     func addStudent(student : Student){
@@ -49,6 +48,19 @@ class StudentController {
         studentArray.removeAtIndex(indexPath.row)
         
     }
+    
+    func filePath(key : String) -> String{
+        
+        let directorySearchResults = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true)
+        
+        let documentPath: AnyObject = directorySearchResults[0]
+        
+        let studentsPath = documentPath.stringByAppendingString("/\(key).plist")
+
+        return studentsPath
+   
+    }
+    
     
     
     
